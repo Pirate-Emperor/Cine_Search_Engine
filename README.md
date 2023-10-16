@@ -78,12 +78,11 @@ Visit the URL in your web browser and start searching for movies.
 
 ## Data Source
 
-The project utilizes a dataset of movie information, including titles, genres, directors, etc. You can update the dataset to include the latest movie information.
+The project utilizes a dataset of movie information, including titles, genres, directors, etc. 
 
 ## Development
 
-To enhance the project, you can modify the C++ libraries, Python scripts, and HTML templates in the `src`, `templates`, and `static` directories, respectively. Some potential areas for improvement include:
-
+To enhance the project, you can modify the C++ libraries, Python scripts, and HTML templates in the `src`, `templates`, and `static` directories, respectively.
 - Enhancing the search algorithm for better relevance and accuracy.
 - Adding more search filters and criteria for users.
 - Improving the design and responsiveness of the HTML user interface.
