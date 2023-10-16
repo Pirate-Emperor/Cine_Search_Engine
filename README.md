@@ -4,6 +4,8 @@ Developed by Pirate-Emperor, Cine_Search_Engine is a movie search engine that em
 
 ## Features
 
+- **Text Searching**: Users can enter search queries and receive a list of documents that contain the search terms.
+- **Indexing**: The search engine uses an inverted index to quickly find documents containing a particular word or phrase.
 - **Hybrid Architecture**: Leverages the efficiency of C++ libraries for computationally intensive operations, Python for the core search engine logic, and HTML for the user interface.
 - **Movie Search**: Users can search for movies based on various criteria such as title, genre, director, etc.
 - **Search Autocomplete**: Provides search suggestions and auto-completion for an enhanced user experience.
