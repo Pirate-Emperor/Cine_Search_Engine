@@ -1,19 +1,22 @@
-# C++ Search Engine Project
+# Cine_Search_Engine
 
-This project is a basic text search engine written in C++. It allows users to search for words or phrases in a collection of documents and retrieves the relevant documents based on the query.
+Developed by Pirate-Emperor, Cine_Search_Engine is a movie search engine that employs a unique hybrid architecture. It utilizes C++ libraries for performance-critical components, Python for running the search engine, and HTML for the user interface.
 
 ## Features
 
-- **Text Searching**: Users can enter search queries and receive a list of documents that contain the search terms.
-- **Indexing**: The search engine uses an inverted index to quickly find documents containing a particular word or phrase.
-- **Relevance Ranking**: Search results are ranked based on their relevance to the search query.
+- **Hybrid Architecture**: Leverages the efficiency of C++ libraries for computationally intensive operations, Python for the core search engine logic, and HTML for the user interface.
+- **Movie Search**: Users can search for movies based on various criteria such as title, genre, director, etc.
+- **Search Autocomplete**: Provides search suggestions and auto-completion for an enhanced user experience.
+- **Relevance-Based Ranking**: Sorts search results based on their relevance to the user query.
+- **User-friendly Interface**: Offers an intuitive HTML interface for users to interact with the search engine.
 
 ## Prerequisites
 
-To compile and run this project, you will need:
+To run the project, you will need:
 
-- A C++ compiler (such as g++, clang++, etc.)
-- A Makefile or build script (if not using an IDE)
+- A C++ compiler (e.g., g++, clang++)
+- Python 3.x
+- Required Python libraries (e.g., Flask, numpy, pandas)
 
 ## Importance
 A [search engine](https://www.text-mining.ro/) is a software system that is designed to carry out web searches. They search the World Wide Web in a systematic way for particular information specified in a textual web search query. The search results are generally presented in a line of results, often referred to as search engine results pages (SERPs) The information may be a mix of links to web pages, images, videos, infographics, articles, research papers, and other types of files. Some search engines also mine data available in databases or open directories. Unlike web directories, which are maintained only by human editors, search engines also maintain real-time information by running an algorithm on a web crawler. Internet content that is not capable of being searched by a web search engine is generally described as the deep web.
@@ -37,42 +40,52 @@ Typically when a user enters a query into a search engine it is a few keywords. 
 Beyond simple keyword lookups, search engines offer their own GUI- or command-driven operators and search parameters to refine the search results. These provide the necessary controls for the user engaged in the feedback loop users create by filtering and weighting while refining the search results, given the initial pages of the first search results. For example, from 2007 the Google.com search engine has allowed one to filter by date by clicking "Show search tools" in the leftmost column of the initial search results page, and then selecting the desired date range. It's also possible to weight by date because each page has a modification time. Most search engines support the use of the boolean operators AND, OR and NOT to help end users refine the search query. Boolean operators are for literal searches that allow the user to refine and extend the terms of the search. The engine looks for the words or phrases exactly as entered. Some search engines provide an advanced feature called proximity search, which allows users to define the distance between keywords. There is also concept-based searching where the research involves using statistical analysis on pages containing the words or phrases you search for.
 
 The usefulness of a search engine depends on the relevance of the result set it gives back. While there may be millions of web pages that include a particular word or phrase, some pages may be more relevant, popular, or authoritative than others. Most search engines employ methods to rank the results to provide the "best" results first. How a search engine decides which pages are the best matches, and what order the results should be shown in, varies widely from one engine to another. The methods also change over time as Internet usage changes and new techniques evolve. There are two main types of search engine that have evolved: one is a system of predefined and hierarchically ordered keywords that humans have programmed extensively. The other is a system that generates an "inverted index" by analyzing texts it locates. This first form relies much more heavily on the computer itself to do the bulk of the work.
+
 ## Installation
 
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/your-username/my-search-engine-cpp.git
-cd my-search-engine-cpp
+git clone https://github.com/Pirate-Emperor/Cine_Search_Engine.git
+cd Cine_Search_Engine
 ```
 
-Compile the project using your C++ compiler. For example, with g++:
+Compile the C++ libraries:
 
 ```bash
-g++ -o search-engine main.cpp
+g++ -o search_lib search_lib.cpp
+```
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-Run the compiled executable:
+Run the Flask app:
 
 ```bash
-./search-engine
+python app.py
 ```
 
-You will be prompted to enter your search query. Enter the query and press Enter. The search engine will then display a list of documents that contain the search terms.
+The web application will be running on `http://127.0.0.1:5000/`.
+
+Visit the URL in your web browser and start searching for movies.
 
 ## Data Source
 
-The search engine uses a sample dataset of documents for searching. The dataset can be found in the `data` directory. You can replace this dataset with your own data source if needed.
+The project utilizes a dataset of movie information, including titles, genres, directors, etc. You can update the dataset to include the latest movie information.
 
 ## Development
 
-To add more features or modify existing ones, you can edit the C++ files in the `src` directory. Some potential areas for improvement include:
+To enhance the project, you can modify the C++ libraries, Python scripts, and HTML templates in the `src`, `templates`, and `static` directories, respectively. Some potential areas for improvement include:
 
-- Implementing a more sophisticated ranking algorithm
-- Improving the efficiency of the indexing and searching processes
-- Adding support for more complex queries (e.g., phrase queries, boolean queries)
+- Enhancing the search algorithm for better relevance and accuracy.
+- Adding more search filters and criteria for users.
+- Improving the design and responsiveness of the HTML user interface.
+- Implementing a recommendation system based on user preferences.
 
 ## License
 
